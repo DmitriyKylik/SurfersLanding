@@ -1,4 +1,5 @@
 import 'slick-carousel';
+import 'svgxuse';
 
 $(function() {
 

@@ -71,6 +71,7 @@
   "dependencies": {
     "angular": "^1.6.9",
     "ng-slick-carousel": "^1.0.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "svgxuse": "^1.2.6"
   }
 }
