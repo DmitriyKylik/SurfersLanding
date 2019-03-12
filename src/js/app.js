@@ -1,8 +1,7 @@
 import 'slick-carousel';
-import 'svgxuse';
 
 $(function() {
-
+  svg4everybody();
   /*----------PRODUCT SLIDER START--------------*/
 
   var product_count = $('.product').length;
@@ -31,7 +30,7 @@ $(function() {
   $('.slick-prev, .slick-next').on('click', function() {
     getCurrProd();
   });
-  
+
   $('.counter_total').text(product_count);
 
 });
@@ -75,32 +74,9 @@ button.addEventListener('click',function() {
 vid.addEventListener('click',function() {
   videoPause();
   this.load();
-  this.style.zIndex = 1; 
+  this.style.zIndex = 1;
   button.style.display = '';
   preview.style.display = '';
 },false);
 
 /*----------ABOUT VIDEO END--------------*/
-
-
-/*  $gallery.on('init', function(event, slick){
-  slideCount = slick.slideCount;
-  setSlideCount();
-  setCurrentSlideNumber(slick.currentSlide);
-});
-
-$gallery.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  setCurrentSlideNumber(nextSlide);
-});
-
-function setSlideCount() {
-  var $el = $('.slide-count-wrap').find('.total');
-  $el.text(slideCount);
-}
-
-function setCurrentSlideNumber(currentSlide) {
-  var $el = $('.slide-count-wrap').find('.current');
-  $el.text(currentSlide + 1);
-}*/
-
-

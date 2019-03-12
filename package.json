@@ -14,7 +14,6 @@
       "htmlhint --config .htmlhintrc"
     ]
   },
-  "authors": "Coderiver <html@coderiver.com.ua>",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
@@ -69,9 +68,7 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
-    "angular": "^1.6.9",
     "ng-slick-carousel": "^1.0.3",
-    "slick-carousel": "^1.8.1",
-    "svgxuse": "^1.2.6"
+    "slick-carousel": "^1.8.1"
   }
 }
