@@ -1,12 +1,16 @@
 import 'slick-carousel';
+svg4everybody();
 
 $(function() {
-  svg4everybody();
   /*----------PRODUCT SLIDER START--------------*/
+  var $teamSlider = $('.team_slider');
+  var $productsSlider = $('.products_slider');
+  var $products = $productsSlider.find('.product');
+  var $productsCounterElem = $('.products_counter_current');
+  var productsСount = $products.length;
+  $('.products_counter_total').text(productsСount);
 
-  var product_count = $('.product').length;
-
-  $('.products_slider').slick({
+  $productsSlider.slick({
     speed:250,
     rows:0,
     slidesToShow:1,
@@ -14,69 +18,71 @@ $(function() {
     appendArrows: $('.products_slider-nav')
   });
 
-  function getCurrProd() {
-    var slick_curr = $('.products_slider').find('.slick-current').data('slick-index');
-    var curr_count = $(slick_curr);
-    $('.counter_curr').text(slick_curr + 1);
+  updateSliderCount($productsSlider, $productsCounterElem);
 
-  }
-
-  getCurrProd();
-
-  $('.product').on('mouseleave', function() {
-    getCurrProd();
+  $products.on('mouseleave', function() {
+    updateSliderCount($productsSlider, $productsCounterElem);
   });
 
   $('.slick-prev, .slick-next').on('click', function() {
-    getCurrProd();
+    updateSliderCount($productsSlider, $productsCounterElem);
   });
 
-  $('.counter_total').text(product_count);
+  function updateSliderCount($slider, productsCurrent) {
+    var sliderСurrentElem = $slider.find('.slick-current').data('slick-index');
+    productsCurrent.text(sliderСurrentElem + 1);
+  }
+  /*----------PRODUCT SLIDER END--------------*/
 
+  /*----------TEAM SLIDER START--------------*/
+  $teamSlider.slick({
+    speed: 250,
+    rows: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
+  /*----------TEAM SLIDER END--------------*/
 });
 
-/*----------PRODUCT SLIDER END--------------*/
 
-/*----------TEAM SLIDER START--------------*/
 
-$('.team_slider').slick({
-  speed: 250,
-  rows: 1,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-});
-/*----------TEAM SLIDER END--------------*/
+
 
 /*----------ABOUT VIDEO START--------------*/
 
-var vid =  document.getElementById('video');
-var button = document.getElementsByClassName('icon-play')[0];
-var preview = document.getElementsByClassName('about_video-preview')[0];
+// 1. Разбить на модули
+// 2. Исправить механизм отображения видео
+// 3. Способ поиска переменых (get by ID...)
+// 4.
+
+// var vid =  document.getElementById('video');
+// var button = document.getElementsByClassName('icon-play')[0];
+// var preview = document.getElementsByClassName('about_video-preview')[0];
 
 
-function videoPlay() {
+// function videoPlay() {
 
-  vid.contentWindow.play();
-}
+//   vid.contentWindow.play();
+// }
 
-function videoPause() {
+// function videoPause() {
 
-  vid.contentWindow.pause();
-}
+//   vid.contentWindow.pause();
+// }
 
-button.addEventListener('click',function() {
+// button.addEventListener('click',function() {
 
-  videoPlay();
-  button.style.display = 'none';
-  preview.style.display = 'none';
-});
+//   videoPlay();
+//   button.style.display = 'none';
+//   preview.style.display = 'none';
+// });
 
-vid.addEventListener('click',function() {
-  videoPause();
-  this.load();
-  this.style.zIndex = 1;
-  button.style.display = '';
-  preview.style.display = '';
-},false);
+// vid.addEventListener('click',function() {
+//   videoPause();
+//   this.load();
+//   this.style.zIndex = 1;
+//   button.style.display = '';
+//   preview.style.display = '';
+// },false);
 
 /*----------ABOUT VIDEO END--------------*/
