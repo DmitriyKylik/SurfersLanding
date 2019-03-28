@@ -1,7 +1,16 @@
 $blue: #00b0ff
 
+html
+	font-size: $mainFontSize
+	@media screen and (max-width: $desktopWidth)
+		font-size: 16px
+	@media screen and (max-width: $tableWidth)
+		font-size: 15px
+	@media screen and (max-width: $phoneWidth)
+		font-size: 14px
+
+
 body
-	font-size: 16px
 	line-height: 1.75
 	background: #fff
 	font-family: 'Montserrat', sans-serif

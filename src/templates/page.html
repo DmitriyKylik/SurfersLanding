@@ -18,7 +18,7 @@ title: Index page
 					<header class="header">
 						<!-- BEGIN logo -->
 						<div class="logo">
-							<a class='logo-href' href="#">{{mixins.icon('logo')}} </a>    <!-- В IE11 SVG не отображается вообще -->
+							<a class='logo-href' href="#">{{mixins.icon('logo')}} </a>
 						</div>
 						<!-- END logo -->
 							<!-- BEGIN  nav-->
@@ -69,21 +69,28 @@ title: Index page
 					<!-- END hero_title_in -->
 
 					<!-- BEGIN products -->
-					<div class="products">
+					<div class="products" style="background-image: url('img/corner-bg.png')">
 						<!-- BEGIN product_slider -->
 						<div class="products_slider">
 								<!-- BEGIN product -->
-								<div class="product" style="background-image: url('img/corner-bg.png')">
+								<div class="product">
 									<!-- BEGIN product_left -->
 									<div class="product_left">
-									<div class="product_photo" style="background-image: url('img/board.png')">
-									</div>
-									<div class="product_views">
-										<div class="product_view" style="background-image: url('img/board-view1.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view2.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view3.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view4.png')"></div>
-									</div>
+                    <img class="product_photo" src="img/board.png"/>
+                    <div class="product_views">
+                      <div class="product_view">
+                        <img src="img/board-view1.png" alt="product_view">
+                      </div>
+                      <div class="product_view">
+                        <img src="img/board-view2.png" alt="product_view">
+                      </div>
+                      <div class="product_view">
+                        <img src="img/board-view3.png" alt="product_view">
+                      </div>
+                      <div class="product_view">
+                        <img src="img/board-view4.png" alt="product_view">
+                      </div>
+                    </div>
 								</div>
 								<!-- END product_left -->
 								<!-- BEGIN product_right -->
@@ -130,18 +137,25 @@ title: Index page
 									<!-- END product_right -->
 								</div>
                 <!-- END product -->
-                								<!-- BEGIN product -->
-								<div class="product" style="background-image: url('img/corner-bg.png')">
+                <!-- BEGIN product -->
+								<div class="product">
 									<!-- BEGIN product_left -->
 									<div class="product_left">
-									<div class="product_photo" style="background-image: url('img/board.png')">
-									</div>
-									<div class="product_views">
-										<div class="product_view" style="background-image: url('img/board-view1.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view2.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view3.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view4.png')"></div>
-									</div>
+                    <img class="product_photo" src="img/board.png"/>
+                    <div class="product_views">
+                        <div class="product_view">
+                          <img src="img/board-view1.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                          <img src="img/board-view2.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                          <img src="img/board-view3.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                          <img src="img/board-view4.png" alt="product_view">
+                        </div>
+                    </div>
 								</div>
 								<!-- END product_left -->
 								<!-- BEGIN product_right -->
@@ -165,13 +179,13 @@ title: Index page
 										<div class="product_info">
 											<ul class="product_nav">
 												<li class="product_nav-item">
-												<a href="#" class="product_desrc">Description</a>
+												  <a href="#" class="product_descr">Description</a>
 												</li>
 												<li class="product_nav-item">
-												<a href="#" class="product_feature">Features</a>
+												  <a href="#" class="product_feature">Features</a>
 												</li>
 												<li class="product_nav-item">
-												<a href="#" class="product_dimension">Dimensions</a>
+												  <a href="#" class="product_dimension">Dimensions</a>
 												</li>
 											</ul>
 											<div class="product_textual">
@@ -189,17 +203,24 @@ title: Index page
 								</div>
 								<!-- END product -->
 								<!-- BEGIN product -->
-								<div class="product" style="background-image: url('img/corner-bg.png')">
+								<div class="product">
 									<!-- BEGIN product_left -->
 									<div class="product_left">
-									<div class="product_photo" style="background-image: url('img/board.png')">
-									</div>
-									<div class="product_views">
-										<div class="product_view" style="background-image: url('img/board-view1.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view2.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view3.png')"></div>
-										<div class="product_view" style="background-image: url('img/board-view4.png')"></div>
-									</div>
+                    <img class="product_photo" src="img/board.png"/>
+                    <div class="product_views">
+                        <div class="product_view">
+                          <img src="img/board-view1.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                            <img src="img/board-view2.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                          <img src="img/board-view3.png" alt="product_view">
+                        </div>
+                        <div class="product_view">
+                          <img src="img/board-view4.png" alt="product_view">
+                        </div>
+                    </div>
 								</div>
 								<!-- END product_left -->
 								<!-- BEGIN product_right -->
@@ -243,11 +264,12 @@ title: Index page
 								<!-- END product -->
 						</div>
 						<!-- END product_slider -->
-							<div class="products_slider-nav"></div>
-							<!-- BEGIN products_counter -->
-							<div class="products_counter">
-								<span class="products_counter_current"></span> / <span class="products_counter_total"></span>
-							</div>
+							<div class="products_slider-nav">
+                <!-- BEGIN products_counter -->
+                <div class="products_counter">
+                  <span class="products_counter_current"></span> / <span class="products_counter_total"></span>
+                </div>
+              </div>
 						<!-- END products_counter -->
 						<h2 class="section_title title-product">boards</h2>
 					</div>
@@ -258,13 +280,13 @@ title: Index page
 			<!-- END hero -->
 			<!-- BEGIN about -->
       <section class="section about" style='background-image: url(img/surfer.png)'>
-          <h2 class="section_title about-title">About us</h2>
+          <h2 class="section_title about_title">About us</h2>
 					<!-- BEGIN about_descr -->
 					<div class="about_descr">
 						<div class="about_descr-wrap">
-							<h2 class="about_title">We are Surfers co.</h2>
+							<h2 class="about_descr_title">We are Surfers co.</h2>
 							{{mixins.icon('X')}}
-							<p class="about_text"><i>Lorem ipsum dolor sit amet,
+							<p class="about_descr_text"><i>Lorem ipsum dolor sit amet,
 							aeneam consectetur adipiscing elit. Fusce iaculis
 							feugiat arcunum fermentum hendrerit. Suspendisse
 							auctor labor nisi, et interdum diam facilisis,
@@ -276,10 +298,6 @@ title: Index page
           <!-- END about_descr -->
           <!-- START about_video -->
 					<div class="about_video">
-						<!-- {{mixins.icon('play')}}
-						<div class='about_video-preview' style='background-image: url(img/preview.png)'></div> -->
-						<!-- <iframe id="video" frameborder="0" src="https://www.youtube.com/embed/Qwo6fwnUYY" allowfullscreen>
-            </iframe> -->
 						<iframe  frameborder="0" src="https://www.youtube.com/embed/oIIDZq4nZpo" allowfullscreen>
 						</iframe>
 					</div>
@@ -289,7 +307,7 @@ title: Index page
 			<!-- BEGIN team -->
 			<section class="section team">
 				<div class="container">
-					<h2 class="section_title title_team">Our team</h2>
+					<h2 class="section_title team_title">Our team</h2>
 					<!-- BEGIN team_slider -->
 					<div class="team_slider">
 						<div class="member">
@@ -298,7 +316,6 @@ title: Index page
 							<p class="member_inst">@tajamos</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Yallingup, Australia</p>
 							</div>
 						</div>
@@ -309,7 +326,6 @@ title: Index page
 							<p class="member_inst">@maliamanuel</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Wailua, Hi</p>
 							</div>
 						</div>
@@ -320,7 +336,6 @@ title: Index page
 							<p class="member_inst">@tajamos</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Maui, Hi</p>
 							</div>
 						</div>
@@ -331,7 +346,6 @@ title: Index page
 							<p class="member_inst">@macyjanecallaghan</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>San Clemente, CA</p>
 							</div>
 						</div>
@@ -341,7 +355,6 @@ title: Index page
 							<p class="member_inst">@tajamos</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Yallingup, Australia</p>
 							</div>
 						</div>
@@ -352,7 +365,6 @@ title: Index page
 							<p class="member_inst">@maliamanuel</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Wailua, Hi</p>
 							</div>
 						</div>
@@ -363,7 +375,6 @@ title: Index page
 							<p class="member_inst">@tajamos</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>Maui, Hi</p>
 							</div>
 						</div>
@@ -374,7 +385,6 @@ title: Index page
 							<p class="member_inst">@macyjanecallaghan</p>
 							{{mixins.icon('waves')}}
 							<div class="member_location">
-								{{mixins.icon('mark')}}
 								<p class='member_city'>San Clemente, CA</p>
 							</div>
 						</div>
@@ -386,21 +396,21 @@ title: Index page
 						{{mixins.icon('X')}}
 						<div class="updates_wrap__in">
 							<div class="update">
-								<div class="update_photo" style='background-image: url(img/updates-photo1.png)'></div>
+                <img src="img/updates-photo1.png" alt="update_photo">
 								<div class="update_descr">
 									<p>Ellie Turner and Jobe Harris have taken
 									 out the 2016 British National Surf Championships</p>
 								</div>
 							</div>
 							<div class="update">
-								<div class="update_photo" style='background-image: url(img/updates-photo2.png)'></div>
+                <img src="img/updates-photo2.png" alt="update_photo">
 								<div class="update_descr">
 									<p>A large group of surfers invaded the coast
 									 of La Jolla Shores, in California, with a single goal in mind</p>
 								</div>
 							</div>
 							<div class="update">
-								<div class="update_photo" style='background-image: url(img/updates-photo3.png)'></div>
+                <img src="img/updates-photo3.png" alt="update_photo">
 								<div class="update_descr">
 									<p>Surfboards are constantly evolving, and there
 									are multiple board designs for a broad range of environments</p>
@@ -416,24 +426,19 @@ title: Index page
 			<!-- BEGIN social -->
 			<section class="section social">
 				<div class="container">
-					<h2 class="section_title title_social">Instagram</h2>
 					<!-- BEGIN instagram -->
 					<div class="inst">
+            <h2 class="section_title title_social">Instagram</h2>
 						<div class="ocean">
-								<!-- <div class="ocean_photos"> -->
-								<div class="ocean_photo" style='background-image: url(img/inst1.png)'></div>
-								<div class="ocean_photo" style='background-image: url(img/inst2.png)'></div>
-							<!-- </div> -->
-							<!-- <div class="ocean_photos"> -->
-								<div class="ocean_photo" style='background-image: url(img/inst3.png)'></div>
-								<div class="ocean_photo" style='background-image: url(img/inst4.png)'></div>
-							<!-- </div> -->
-						</div>
+              <img src="img/inst1.png" alt="instagram_photo">
+              <img src="img/inst2.png" alt="instagram_photo">
+              <img src="img/inst3.png" alt="instagram_photo">
+              <img src="img/inst4.png" alt="instagram_photo">
+            </div>
 						<div class="inst_meta">
 							{{mixins.icon('instBlue')}}
 							<a href="#" class="inst_follow">Follow us</a>
 							<p class='inst_name'>@surfersco</p>
-
 						</div>
 					</div>
 					<!-- END instagram -->
@@ -477,7 +482,6 @@ title: Index page
 								</div>
 						</div>
 						<!-- END fb_friends -->
-						<a href="#" style='background-image: url(img/inst4.png)'></a>
 					</div>
 					<!-- END fb -->
 				</div>
@@ -485,10 +489,6 @@ title: Index page
 			<!-- BEGIN footer -->
 			<footer class="footer">
 				<div class="container">
-					<div class="footer_rights">
-						<p>© 2017 Surfers Co.</p>
-						<p>Design by @lucaalco</p>
-					</div>
 					<div class="footer_right">
 							<ul class="footer_nav">
 								<li class="footer_nav-item">
@@ -520,14 +520,17 @@ title: Index page
 							<h3 class="footer_subscr-title">Subscribe to our newsletter</h3>
 							<form class="footer_subscr-form" action="" method='post'>
 								{{mixins.icon('footer_mail')}}
-								<input id='footer_email' type="email" placeholder="Your e-mail">
-								<label id='footer_submit'>
-									<input type="submit">
-									{{mixins.icon('button_submit')}}
-								</label>
+								<input id='footer_email' type="email" placeholder="Your e-mail"/>
+                <button class="mail_submit" type="submit">
+                    {{mixins.icon('button_submit')}}
+                </button>
 							</form>
 						</div>
-					</div>
+          </div>
+					<div class="footer_rights">
+            <span>© 2018 Surfers Co.</span>
+            <span>Design by @lucaalco</span>
+          </div>
 				</div>
 			</footer>
 			<!-- END footer -->
